@@ -26,6 +26,7 @@ app.post("/", function(req,res){
         const sizeS= parseFloat(effortS/tdevS).toFixed(0);
         const sizeE= parseFloat(effortE/tdevE).toFixed(0);
 
+        res.write("<html><body>");
         res.write("<h1> Estimation of Development Effort (PM) </h1>");
         res.write("<p>Organic: "+effortO+"</p><br/>");
         res.write("<p>Semi- detached: "+effortS+"</p><br/>");
@@ -40,6 +41,7 @@ app.post("/", function(req,res){
         res.write("<p>Organic: "+sizeO+"</p><br/>");
         res.write("<p>Semi- detached: "+sizeS+"</p><br/>");
         res.write("<p>Embedded: " +sizeE+"</p><br/>")
+        res.write("</body></html>");
 
         res.send();
     }
