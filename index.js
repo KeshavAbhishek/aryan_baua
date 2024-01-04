@@ -37,7 +37,7 @@ app.post("/", function(req,res){
         res.write("<p>Semi- detached: "+tdevS+"</p><br/>");
         res.write("<p>Embedded: " +tdevE+"</p><br/>")
 
-        res.write("<br/> <h1> Average Staff (Persons) </h1>");
+        res.write("<br/> <h1> Average Staff (Persons) </h1><button>HELLO</button>");
         res.write("<p>Organic: "+sizeO+"</p><br/>");
         res.write("<p>Semi- detached: "+sizeS+"</p><br/>");
         res.write("<p>Embedded: " +sizeE+"</p><br/>")
